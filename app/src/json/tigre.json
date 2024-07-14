@@ -1,0 +1,43 @@
+{
+    "name": "Luminous White Tiger",
+    "symbol": "LUMWTIGER",
+    "description": "A majestic white tiger with advanced robotic enhancements and ethereal blue bioluminescence.",
+    "image": "https://bafybeibhcmu5qzgsvigpgtd7tbyi5kyq5pqdol6bqxevgvmoq7dqoyvbzi.ipfs.w3s.link",
+    "attributes": [
+      {
+        "trait_type": "Species",
+        "value": "White Tiger"
+      },
+      {
+        "trait_type": "Material",
+        "value": "Photonic crystal structure and bioelectric circuits"
+      },
+      {
+        "trait_type": "Glow Color",
+        "value": "Blue"
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Mythic"
+      },
+      {
+        "trait_type": "Special Feature",
+        "value": "Energy-conductive stripes"
+      }
+    ],
+    "properties": {
+      "files": [
+        {
+          "uri": "https://bafybeibhcmu5qzgsvigpgtd7tbyi5kyq5pqdol6bqxevgvmoq7dqoyvbzi.ipfs.w3s.link",
+          "type": "image/png"
+        }
+      ],
+      "category": "image",
+      "creators": [
+        {
+          "address": "VOTRE_ADRESSE_SOLANA",
+          "share": 100
+        }
+      ]
+    }
+  }

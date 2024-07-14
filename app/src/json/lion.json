@@ -1,0 +1,43 @@
+{
+    "name": "Cybernetic Lion",
+    "symbol": "CYBLION",
+    "description": "A powerful cybernetic lion with glowing blue circuits and advanced mechanical features.",
+    "image": "https://bafybeighw7yev2yedinpvkrdcvqaxuinjbk4h64nbyhbwiuyor4e577lmy.ipfs.w3s.link",
+    "attributes": [
+      {
+        "trait_type": "Species",
+        "value": "Lion"
+      },
+      {
+        "trait_type": "Material",
+        "value": "Advanced alloy and bioluminescent circuits"
+      },
+      {
+        "trait_type": "Glow Color",
+        "value": "Blue"
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Epic"
+      },
+      {
+        "trait_type": "Special Feature",
+        "value": "Illuminated mane"
+      }
+    ],
+    "properties": {
+      "files": [
+        {
+          "uri": "https://bafybeighw7yev2yedinpvkrdcvqaxuinjbk4h64nbyhbwiuyor4e577lmy.ipfs.w3s.link",
+          "type": "image/png"
+        }
+      ],
+      "category": "image",
+      "creators": [
+        {
+          "address": "VOTRE_ADRESSE_SOLANA",
+          "share": 100
+        }
+      ]
+    }
+  }

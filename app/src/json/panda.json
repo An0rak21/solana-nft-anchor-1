@@ -1,0 +1,43 @@
+{
+    "name": "Cyber Red Panda",
+    "symbol": "CYBRPANDA",
+    "description": "A charming cybernetic red panda with bioluminescent fur and advanced robotic implants.",
+    "image": "https://bafybeidklf7zx7t3pksiqaygi5ibe6yemdmhweqpzzgbkkbdkcrv76zvsu.ipfs.w3s.link",
+    "attributes": [
+      {
+        "trait_type": "Species",
+        "value": "Red Panda"
+      },
+      {
+        "trait_type": "Material",
+        "value": "Synthetic fur and quantum circuitry"
+      },
+      {
+        "trait_type": "Glow Color",
+        "value": "Blue and Orange"
+      },
+      {
+        "trait_type": "Rarity",
+        "value": "Legendary"
+      },
+      {
+        "trait_type": "Special Feature",
+        "value": "Holographic eyes"
+      }
+    ],
+    "properties": {
+      "files": [
+        {
+          "uri": "https://bafybeidklf7zx7t3pksiqaygi5ibe6yemdmhweqpzzgbkkbdkcrv76zvsu.ipfs.w3s.link",
+          "type": "image/png"
+        }
+      ],
+      "category": "image",
+      "creators": [
+        {
+          "address": "VOTRE_ADRESSE_SOLANA",
+          "share": 100
+        }
+      ]
+    }
+  }
