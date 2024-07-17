@@ -15,16 +15,27 @@ import {
   FormLabel, 
   Input, 
   VStack,
-  useToast
+  useToast,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure
 } from '@chakra-ui/react'
 import { generateSigner, percentAmount } from '@metaplex-foundation/umi'
+import NFTViewer from './NFTViewer'
 
 const MintNFT: React.FC = () => {
   const [name, setName] = useState('')
   const [symbol, setSymbol] = useState('')
   const [uri, setUri] = useState('')
+  const [mintAddress, setMintAddress] = useState('')
   const wallet = useWallet()
   const toast = useToast()
+  const { isOpen, onOpen, onClose } = useDisclosure()
 
   const mintNFT = async () => {
     if (!wallet.publicKey) {
@@ -53,15 +64,17 @@ const MintNFT: React.FC = () => {
         sellerFeeBasisPoints: percentAmount(5.5, 2),
       }).sendAndConfirm(umi)
 
-      const mintAddress = mint.publicKey
+      setMintAddress(mint.publicKey.toString())
 
       toast({
         title: 'NFT Minted!',
-        description: `Your NFT "${name}" has been successfully minted. Mint address: ${mintAddress}`,
+        description: `Your NFT "${name}" has been successfully minted.`,
         status: 'success',
         duration: 5000,
         isClosable: true,
       })
+
+      onOpen() // Open the modal
 
     } catch (error) {
       console.error('Error minting NFT:', error)
@@ -94,6 +107,22 @@ const MintNFT: React.FC = () => {
           Mint NFT
         </Button>
       </VStack>
+
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Your Minted NFT</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            {mintAddress && <NFTViewer mintAddress={mintAddress} />}
+          </ModalBody>
+          <ModalFooter>
+            <Button colorScheme="blue" mr={3} onClick={onClose}>
+              Close
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     </Box>
   )
 }
